@@ -9,7 +9,7 @@ import (
 
 func main() {
 
-	// specifiedTime := time.Date(1988, 9, 15, 18, 13, 16, 99, time.Local)
+	// specifiedTime := time.Date(1990, 10, 01, 18, 13, 16, 99, time.Local)
 
 	// Uncomment the following line see specifiedTime in raw format.
 	// It will include a lot of information about the time, including nanoseconds and local timezone.
