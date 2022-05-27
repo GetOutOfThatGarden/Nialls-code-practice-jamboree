@@ -5,8 +5,13 @@ import (
 	"net/http"
 )
 
-// The below code creates a "handler", I need to figure out what that is.
-// In the below handler() function, "w" is the response writer, "r" is the request. (Thanks github copilot)
+// I am using this guide for this tutorial:
+// https://www.youtube.com/watch?v=-QmdZ7821wA
+
+// The below code creates a "handler", I need to figure out what that is. NH
+// In the below handler() function, "w" is the response writer, "r" is the request. (GHC)
+// I don't understand what the "fmt.Fprintf" does. NH
+// It seems it will do something similar to fmt.Println. NH
 
 func handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Hello, World!")
@@ -25,7 +30,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 // 2. The handler function. (GHC)
 //    Description says this parameter is usually nil. NH
 //	  This still confuses me. Both http.HandleFunc() and http.ListenAndServe() take a handler as the second parameter . NH
-//    So why dont they accept the same handler?
+//    So why dont they accept the same handler? NH
 
 func main() {
 	http.HandleFunc("/", handler)
